@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 using Xamarin.Forms;
 
 namespace MIDemoForms
@@ -19,6 +21,8 @@ namespace MIDemoForms
         protected override void OnStart()
         {
             // Handle when your app starts
+            MobileCenter.Start("android=bb652793-0cf4-45ce-920f-253537d42ead;",
+                   typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
