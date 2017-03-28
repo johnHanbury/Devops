@@ -13,6 +13,12 @@ namespace MIDemoForms
         {
             InitializeComponent();
             Image.Source = ImageSource.FromUri(new Uri("https://www.marine.ie/Home/sites/default/files/MIFiles/Images/General/Marine_logo.jpg"));
+            Button.Clicked += ButtonOnClicked;
+        }
+
+        private void ButtonOnClicked(object sender, EventArgs eventArgs)
+        {
+            Device.OpenUri(new Uri("https://www.marine.ie/Home/"));
         }
     }
 }

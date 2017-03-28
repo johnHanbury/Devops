@@ -24,6 +24,7 @@
            Margin="0,0,0,50"    />
 
         <Button
+            x:Name="Button"
             Text="Click me!"
             TextColor="#2196F3"
             HorizontalOptions="Center"
