@@ -21,8 +21,8 @@ namespace MIDemoForms
         protected override void OnStart()
         {
             // Handle when your app starts
-            MobileCenter.Start("android=bb652793-0cf4-45ce-920f-253537d42ead;",
-                   typeof(Analytics), typeof(Crashes));
+            //MobileCenter.Start("android=bb652793-0cf4-45ce-920f-253537d42ead;",
+            //       typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
