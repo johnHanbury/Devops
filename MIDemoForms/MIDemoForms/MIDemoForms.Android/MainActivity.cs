@@ -21,8 +21,7 @@ namespace MIDemoForms.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-            MobileCenter.Start("bb652793-0cf4-45ce-920f-253537d42ead",
-                   typeof(Analytics), typeof(Crashes));
+            
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
